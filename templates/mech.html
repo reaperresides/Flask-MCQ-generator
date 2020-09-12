@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+
+
+{% block title %}
+  Subjects
+{% endblock %}
+
+<body>
+{% block content %}
+    <div class="container my-p4">
+    <h2>list of subjects</h2>
+    <hr>
+    <form method="POST">
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="radiob" id="radio1" value="option1" checked>
+  <label class="form-check-label" >
+    Power Engineering
+  </label>
+  </div>
+  <br>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="radiob" id="radio1" value="option2" checked>
+  <label class="form-check-label" >
+    Design of mechanical systems
+  </label>
+  </div>
+  <br>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="radiob" id="radio1" value="option3" checked>
+  <label class="form-check-label" for="exampleRadios3">
+    Industrial Engineering and Management
+  </label>
+  </div>
+  <br>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="radiob" id="radio1" value="option4" checked>
+  <label class="form-check-label" for="exampleRadios4">
+    Renewable Energy sources
+  </label>
+  </div>
+  <br>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="radiob" id="radio1" value="option5" checked>
+  <label class="form-check-label" for="exampleRadios5">
+    Project Management
+  </label>
+  </div>
+  <br>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="radiob" id="radio1" value="option6" checked>
+  <label class="form-check-label" for="exampleRadios6">
+    All Subjects
+  </label>
+</div
+    <br>
+    <br>
+    <input type="submit" value="Search" class="btn btn-primary">
+    </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<style>
+body {
+  background-image: linear-gradient(to right, rgba(73,252,73,0), rgba(251,185,40,1));
+}
+</style>
+{% endblock %}
+</body>

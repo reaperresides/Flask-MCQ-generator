@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+
+
+{% block title %}
+  MCQs
+{% endblock %}
+<body>
+  {% block content %}
+    <div class="container my-p4">
+    <h1>{{data[1][1]}}</h1>
+    <hr>
+    <br>
+    <form method="POST" action="/mcqs">
+    {% for i in data %}
+    <h5>{{data.index(i)+1}}) {{i[3]}}</h5>
+    <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios{{data.index(i)}}" id="exampleRadios1" value="1" checked>
+    <label class="form-check-label" for="exampleRadios1">
+    {{i[4]}}
+    </label>
+    </div>
+
+      <div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios{{data.index(i)}}" id="exampleRadios1" value="2" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    {{i[5]}}
+  </label>
+  </div>
+      <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios{{data.index(i)}}" id="exampleRadios1" value="3" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    {{i[6]}}
+  </label>
+  </div>
+      <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios{{data.index(i)}}" id="exampleRadios1" value="4" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    {{i[7]}}
+  </label>
+  </div>
+  <hr>
+{% endfor %}
+ 
+    <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </div>
+
+<style>
+body {
+  background-image: linear-gradient(to right, rgba(73,252,73,0), rgba(251,185,40,1));
+}
+</style>
+  {% endblock %}
+</body>

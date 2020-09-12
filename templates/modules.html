@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+
+
+
+{% block title %}
+  modules
+{% endblock %}
+
+<body>
+{% block content %}
+    <div class="container my-p4">
+    <h2>list of modules</h2>
+    <hr>
+    <form method="POST">
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Module-1
+  </label>
+  </div>
+
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option2" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Module-2
+  </label>
+  </div>
+
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option3" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Module-3
+  </label>
+  </div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option4" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Module-4
+  </label>
+  </div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option5" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Module-5
+  </label>
+  </div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option6" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Module-6
+  </label>
+</div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option7" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    All modules
+  </label>
+</div>
+
+    <hr>
+  <div class="form-group row">
+  <div class="col-xs-2">
+    <label for="ex3">Select no. of Questions:</label>
+    <input class="form-control" name="nquestions" id="nquestions" type="text" placeholder="min-2 max-20">
+  </div>
+  </div>
+ 
+
+
+    <hr>
+    <input type="submit" value="Submit" class="btn btn-primary">
+    </div>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+<style>
+body {
+  background-image: linear-gradient(to right, rgba(73,252,73,0), rgba(251,185,40,1));
+}
+
+</style>
+{% endblock %}
+</body>
