@@ -42,7 +42,7 @@ def dev():
 def Modules():
     global fetching_size,fetchdata
     if request.method=="POST":
-        mylist=["option1","option2","option3","option4"]
+        mylist=["option1","option2","option3","option4","option5"]
         if request.form["exampleRadios"] not in mylist:
             return redirect(url_for("dev"))
         else:
