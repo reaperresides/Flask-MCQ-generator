@@ -77,7 +77,7 @@ def Modules():
             
 
 
-    return render_template("MCQs.html")
+    return render_template("modules.html")
 
 
 @app.route('/mcqs',methods=["GET","POST"])
